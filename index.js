@@ -11,7 +11,7 @@ const semantics = grammar.createSemantics();
 // --- Run ---
 const input = process.argv[2];
 if (!input) {
-  console.error('Usage: node index.js "<program>"');
+  console.error('Usage: node index.js "<3DTee program>"');
   process.exit(1);
 }
 
