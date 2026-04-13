@@ -1,0 +1,24 @@
+{
+  "name": "plangfinallanguage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlanz1/plangfinallanguage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/dlanz1/plangfinallanguage/issues"
+  },
+  "homepage": "https://github.com/dlanz1/plangfinallanguage#readme",
+  "dependencies": {
+    "ohm-js": "^17.5.0"
+  }
+}
