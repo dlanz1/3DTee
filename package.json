@@ -1,23 +1,32 @@
 {
   "name": "3dtee",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "3DTee is a golf-themed statically typed language that compiles to JavaScript.",
+  "main": "src/compiler.js",
+  "bin": {
+    "3dtee": "src/3DTee.js"
+  },
   "scripts": {
     "test": "c8 node --test test/**/*.test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dlanz1/plangfinallanguage.git"
+    "url": "git+https://github.com/dlanz1/3DTee.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "compiler",
+    "language",
+    "golf",
+    "ohm-js",
+    "javascript"
+  ],
+  "author": "3DTee Team",
   "license": "ISC",
   "type": "module",
   "bugs": {
-    "url": "https://github.com/dlanz1/plangfinallanguage/issues"
+    "url": "https://github.com/dlanz1/3DTee/issues"
   },
-  "homepage": "https://github.com/dlanz1/plangfinallanguage#readme",
+  "homepage": "https://github.com/dlanz1/3DTee#readme",
   "dependencies": {
     "graph-stringify": "^1.1.0",
     "ohm-js": "^17.5.0"

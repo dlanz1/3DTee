@@ -1,0 +1,7 @@
+// Demonstrates strings, unicode escapes, and comments.
+teeOff
+  bag courseName = "Pebble\\nBeach\\u{26F3}";
+  bag player = "コンパイラ";
+  // Keep this in bounds with the grammar.
+  bag strokes = 71;
+clubHouse

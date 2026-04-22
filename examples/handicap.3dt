@@ -1,0 +1,7 @@
+// Demonstrates typed functions and arithmetic expressions.
+teeOff
+  swing relativeToPar(score: int, par: int): int {
+    sink score - par;
+  }
+  bag today = relativeToPar(74, 72);
+clubHouse

@@ -1,12 +1,18 @@
 import fs from "node:fs"
-import ohm from "ohm-js"
+import * as ohm from "ohm-js"
 
 const grammar = ohm.grammar(fs.readFileSync(new URL("./3DTee.ohm", import.meta.url), "utf-8"))
 
-export default function parse(sourceCode) {
-    const match = grammar.match(sourceCode)
-    if (match.succeeded()) {
-        return match
-    }
-    throw new Error(match.message)
+export function match(sourceCode) {
+    return grammar.match(sourceCode)
 }
+
+export function parse(sourceCode) {
+    const result = match(sourceCode)
+    if (result.succeeded()) {
+        return result
+    }
+    throw new Error(result.message)
+}
+
+export default parse

@@ -1,0 +1,8 @@
+// Demonstrates structs, arrays, and for-each style play loops.
+teeOff
+  course HoleScore { hole: int strokes: int }
+  bag totals = [3, 4, 5, 4];
+  play s through totals {
+    bag current = s;
+  }
+clubHouse

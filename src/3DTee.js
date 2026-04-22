@@ -1,8 +1,8 @@
 #! /usr/bin/env node
 
 import * as fs from "node:fs/promises"
-import stringify from "graph-stringify"
-import compule from "./compiler.js"
+import util from "node:util"
+import compile from "./compiler.js"
 
 const help = `3DTee compiler 
 
@@ -20,9 +20,14 @@ async function compileFromFile(filename, outputType) {
     try {
         const buffer = await fs.readFile(filename)
         const compiled = compile(buffer.toString(), outputType)
-        console.log(stringify(getCompileCacheDir, "kind") || compiled)
+        if (typeof compiled === "string") {
+            console.log(compiled)
+        } else {
+            console.log(util.inspect(compiled, { depth: null, colors: false }))
+        }
     } catch (e) {
-        console.error(`\u001b[31m${e}\u001b[39m`)
+        const message = e instanceof Error ? e.message : String(e)
+        console.error(message)
         process.exitCode = 1
     }
 }

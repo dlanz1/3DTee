@@ -1,0 +1,5 @@
+// Demonstrates optionals, hazard values, and null-coalescing.
+teeOff
+  bag preferred = hazard string;
+  bag teeTime = preferred ?? "07:30";
+clubHouse
