@@ -109,6 +109,7 @@ plangfinallanguage/
 - [Daniel Lee](https://github.com/DanielJLee0917) — Collaborator
 - [Devan Joaquin Abiva](https://github.com/DevanJoaquin) — Collaborator
 - [Trevor Leung](https://github.com/TrevorLeung05) — Collaborator
+- [Bill Nguyen](https://github.com/BillNg2801) — Collaborator
 
 ## License
 
